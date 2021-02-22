@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(247, 247, 247, 96%);
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  color: rgba(247, 247, 247, 96%);
+}
+
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+  color: rgba(247, 247, 247, 96%);
+}
+
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  color: rgba(247, 247, 247, 96%);
+}
+
+body {
+  background-image: url(./images/Homepage\ Camera.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 4rem 6rem;
+}
+
+.cover {
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  display: block;
+}
+
+.overlay:before {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 450px;
+  top: 40;
+  left: 5%;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.overlay * {
+  position: relative; /* Makes elements display above overlay. */
+}
